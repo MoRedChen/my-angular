@@ -4,73 +4,25 @@
     <div class="container" style="display: block;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle">
-            <span class="sr-only">選單切換</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+              <span class="sr-only">選單切換</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" style="margin-left: 0;"><img src="assets\imgs\logo.png" width="32" height="32" class="img-circle" style="margin: 10px 30px; padding: 0;"></a>
+            <!-- <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" style="margin-left: 0;"><img src="assets\imgs\logo.png" width="32" height="32" class="img-circle" style="margin: 10px 30px; padding: 0;"></a> -->
+            <a class="nav-item navbar-brand" routerLink="/" routerLinkActive="active">專題測試</a>
         </div>
         <div class="my-navbar rightIn">
             <ul class="nav navbar-nav">
-                <li><a class="nav-item nav-link" routerLink="/" routerLinkActive="active">首頁</a></li>
-                <li><a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">關於我們</a></li>
-                <!-- <li><a class="nav-item nav-link" routerLink="/product" routerLinkActive="active">產品列表</a></li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <!-- <li *ngIf="!user"><a class="nav-item nav-link" routerLink="/account/login" routerLinkActive="active">登入</a></li>
-              <li *ngIf="!user"><a class="nav-item nav-link" routerLink="/account/register" routerLinkActive="active">註冊</a></li>
-
-              <li *ngIf="user"><a *ngIf="user.username === admin" class="nav-item nav-link" routerLink="/usersCRUDsystem" routerLinkActive="active">用戶管理</a></li>
-              <li *ngIf="user"><a class="nav-item nav-link">您好 {{user.username}}！</a></li>
-              <li *ngIf="user"><a class="nav-item nav-link" href="/" (click)="logout()">登出</a></li> -->
+                <li><a class="nav-item nav-link" routerLink="/" routerLinkActive="active">首頁</a></li>
+                <li><a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">關於我們</a></li>
+                <li><a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active">聯繫我們</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- <div id="carousel-id" class="carousel slide" data-ride="carousel" style="clear: both;">
-幻燈片小圓點區
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-id" data-slide-to="2" class=""></li>
-    </ol>
-幻燈片主圖區
-    <div class="carousel-inner">
-        <div class="item item-one active">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1 style="font-weight: bold;">第一頁標題</h1>
-                    <p style="font-weight: bold;">第一頁內容</p>
-                    <p><a routerLink="/product" class="btn btn-lg btn-transparent" href="#" role="button">了解更多</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item item-two">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1 style="font-weight: bold;">第二頁標題</h1>
-                    <p style="font-weight: bold;">第二頁內容</p>
-                    <p><a routerLink="/product" class="btn btn-lg btn-transparent" href="#" role="button">了解更多</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="item item-three">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1 style="font-weight: bold;">第三頁標題</h1>
-                    <p style="font-weight: bold;">第三頁內容</p>
-                    <p><a routerLink="/product" class="btn btn-lg btn-transparent" href="#" role="button">了解更多</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-上下頁控制區
-    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</div> -->
 
 <div class="app-container" style="clear: both;">
     <router-outlet></router-outlet>

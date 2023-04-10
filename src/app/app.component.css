@@ -5,6 +5,21 @@
 
 .navbar {
     margin-top: 0;
+    background-color: #343a40!important;
+    height: 52px;
+}
+
+.navbar>.container {
+    padding: 5px 50px;
+}
+
+.navbar-brand {
+    margin: 0;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #fff;
 }
 
 .navbar,
@@ -14,12 +29,12 @@
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
+    color: rgba(255, 255, 255, .5);
     transition: 0.3s;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    color: #888;
+    color: rgba(255, 255, 255, .8);
 }
 
 .navbar-brand {
@@ -50,6 +65,9 @@
     .navbar .container {
         width: 100%;
     }
+    .navbar>.container {
+        padding: 5px 45px;
+    }
     /* 漢堡選單與頁首 */
     .navbar-toggle {
         display: block;
@@ -62,7 +80,8 @@
     /* 自訂 */
     .my-navbar {
         position: fixed;
-        background-color: #2c2c2c;
+        /* background-color: #4f565e!important; */
+        background-image: linear-gradient(225deg, #2a3035 0%, #4f565ef8 50%, #2a3035 90%);
         overflow: auto;
         width: 70%;
         top: 50px;
@@ -111,7 +130,8 @@
         padding: 10px 15px;
     }
     .navbar-nav>li>a {
-        line-height: 20px;
+        line-height: 50px;
+        font-size: 28px;
     }
     .navbar-form {
         position: relative;
@@ -140,10 +160,17 @@
     .navbar {
         z-index: 16;
     }
+    .navbar>.container {
+        padding: 5px 30px;
+    }
     /* 自訂 */
     .my-navbar {
         position: fixed;
-        background-color: #2c2c2c;
+        /* background-image: linear-gradient(270deg, #2a3035 0%, #2a303587 50%, transparent 90%); */
+        /* text-align: right; */
+        /* padding-right: 12px; */
+        background-image: linear-gradient(225deg, #2a3035 0%, #4f565ef8 50%, #2a3035 90%);
+        /* background-color: #4f565e!important; */
         overflow: auto;
         width: 70%;
         top: 50px;
@@ -153,6 +180,8 @@
     }
     .navbar-brand {
         margin-left: 20px;
+        font-size: 24px;
+        padding: 5px;
     }
     /* 自訂 */
     .my-navbar .navbar-nav {
@@ -172,6 +201,10 @@
     }
     .navbar-form {
         margin: 10px;
+    }
+    .navbar-nav>li>a {
+        line-height: 50px;
+        font-size: 26px;
     }
 }
 
@@ -271,7 +304,7 @@
 /* 整體設定 */
 
 .page-footer {
-    background-color: rgba(8, 8, 8, 1);
+    background-color: #343a40;
     color: rgba(255, 255, 255, .6);
     padding: 16px 0;
 }
